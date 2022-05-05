@@ -10,10 +10,10 @@ Services developed in accordance with REST architecture are called **Restful** W
   
   **This rule has been described with 4 sub-items.**
   
-  * Resource identification in requests
-  * Resource manipulation through representations
-  * Self-descriptive messages
-  * Hypermedia as the engine of application 
+  * Resource identification in requests. Rather than making all our requests to a singular service endpoint, we now start talking to individual resources.
+  * Resource manipulation through representations. When a data belonging to the source is obtained on the client side, this data should be sufficient to make the necessary changes on the source.
+  * Self-descriptive messages. It introduces using HTTP verbs and HTTP response codes
+  * Hypermedia as the engine of application. The point of hypermedia controls is that they tell us what we can do next, and the URI of the resource we need to manipulate to do it. Rather than us having to know where to post our appointment request, the hypermedia controls in the response tell us how to do it. One obvious benefit of hypermedia controls is that it allows the server to change its URI scheme without breaking clients. A further benefit is that it helps client developers explore the protocol. The links give client developers a hint as to what may be possible next.
 
 2. Client Server Architecture
 3. Stateless
